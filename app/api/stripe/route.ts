@@ -41,12 +41,12 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "INR",
+            currency: "USD",
             product_data: {
               name: "PrismGen AI Pro",
               description: "Unlimited AI Generations"
             },
-            unit_amount: 100,
+            unit_amount: 1499,
             recurring: {
               interval: "month"
             }
