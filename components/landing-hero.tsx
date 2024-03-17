@@ -18,9 +18,8 @@ export const LandingHero = () => {
             options={{
               strings: [
                 "Chatbot.",
-                "Photo Generation.",
-                "Blog Writing.",
-                "Mail Writing."
+                "Image Generation.",
+                "Code Generation."
               ],
               autoStart: true,
               loop: true,
@@ -28,7 +27,7 @@ export const LandingHero = () => {
           />
         </div>
       </div>
-      <div className="text-sm md:text-xl font-light text-zinc-400">
+      <div className="text-sm md:text-xl font-light text-zinc-400 ">
         Create content using AI 10x faster (Beta Version)
       </div>
       <div>
