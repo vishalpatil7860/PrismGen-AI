@@ -5,7 +5,7 @@ import prismadb from "@/lib/prismadb";
 import { stripe } from "@/lib/stripe";
 import { absoluteUrl } from "@/lib/utils";
 
-const settingsUrl = absoluteUrl("http://localhost:3000/settings");
+const settingsUrl = absoluteUrl("https://prism-gen-ai.vercel.app/settings");
 
 export async function GET() {
   try {
@@ -32,8 +32,8 @@ export async function GET() {
     }
 
     const stripeSession = await stripe.checkout.sessions.create({
-      success_url: 'http://localhost:3000/settings',
-      cancel_url: 'http://localhost:3000/settings',
+      success_url: 'https://prism-gen-ai.vercel.app/settings',
+      cancel_url: 'https://prism-gen-ai.vercel.app/settings',
       payment_method_types: ["card",],
       mode: "subscription",
       billing_address_collection: "auto",
