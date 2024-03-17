@@ -7,13 +7,13 @@ const testimonials = [
     name: "Conversation",
     avatar: "C",
     title: "GPT 4 Turbo",
-    description: "Generate Blogs, Poems, Stories, Emails...",
+    description: "Ask questions to our advanced chatbot.",
   },
   {
     name: "Image Generation",
     avatar: "I",
     title: "Dall-E Model 3.0",
-    description: "Turn your prompt into an image",
+    description: "Turn your prompt into an image.",
   },
   {
     name: "Code Generation",
