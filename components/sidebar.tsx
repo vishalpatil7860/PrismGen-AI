@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Activity, AtSign, Briefcase, BriefcaseIcon, Code, File, FileText, ImageIcon, ImagePlusIcon, LayoutDashboard, MessageSquare, Settings } from "lucide-react";
+import { Code, File, ImageIcon, LayoutDashboard, MessageSquare, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -36,30 +36,14 @@ const routes = [
   // 'Chat with PDF' entry with comingSoon flag
   {
     label: 'Chat with PDF',
-    icon: FileText,
+    icon: File,
     color: "text-pink-700",
     href: "",
     comingSoon: true, // Indicates that this feature is not yet available
   },
   {
     label: 'Chat with Image',
-    icon: ImagePlusIcon,
-    color: "text-yellow-700",
-    bgColor: "bg-yellow-700/10",
-    href:'',
-    comingSoon: true
-  },
-  {
-    label: 'Doctor GPT',
-    icon: Activity,
-    color: "text-green-700",
-    bgColor: "bg-green-700/10",
-    href:'',
-    comingSoon: true
-  },
-  {
-    label: 'Email GPT',
-    icon: AtSign,
+    icon: ImageIcon,
     color: "text-yellow-700",
     bgColor: "bg-yellow-700/10",
     href:'',
